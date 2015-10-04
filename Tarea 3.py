@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[14]:
+# In[16]:
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -58,8 +58,8 @@ s=np.linspace(0,n*h,num=n+1) #n+1 pq son n+1 valores debido a que la lista yi pa
 fig1=plt.figure(1)
 fig1.clf()
 plt.title('Grafico y(s) vs s')
-plt.xlabel('s')
-plt.ylabel('y(s)')
+plt.xlabel('Tiempo reescalado (s)')
+plt.ylabel('Solucion y(s)')
 plt.plot(s,y1,'r-')
 plt.plot(s,y2,'b-')
 red_patch = mpatches.Patch(color='red', label='Solucion con condicion inicial (1)')
@@ -71,8 +71,8 @@ plt.grid(True)
 fig2=plt.figure(2)
 fig2.clf()
 plt.title('Grafico dy/ds vs y(s)')
-plt.xlabel('y(s)')
-plt.ylabel('dy/ds')
+plt.xlabel('Solucion y(s)')
+plt.ylabel('Derivada (dy/ds)')
 green_patch = mpatches.Patch(color='green', label='Derivada con condicion inicial (1)')
 yellow_patch = mpatches.Patch(color='yellow', label='Derivada con condicion inicial (2)')
 plt.legend(handles=[green_patch,yellow_patch])
